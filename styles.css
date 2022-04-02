@@ -1,0 +1,32 @@
+
+html {
+  height: 100vh;
+  background-color: black;
+}
+
+body {
+  background-color: rgba(226, 244, 255, 1);
+  min-height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+ 
+}
+
+nav{
+    width: 100%;
+    background-color: rgb(26, 8, 70);
+    
+    padding: 1em 0px;
+
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#container {
+  height: fit-content;
+}
