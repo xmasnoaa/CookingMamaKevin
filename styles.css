@@ -1,32 +1,47 @@
-
 html {
-  height: 100vh;
   background-color: black;
 }
 
 body {
   background-color: rgba(226, 244, 255, 1);
   min-height: 100vh;
-  font-family: 'Quicksand', sans-serif;
- 
+  font-family: "Quicksand", sans-serif;
 }
 
-nav{
-    width: 100%;
-    background-color: rgb(26, 8, 70);
-    
-    padding: 1em 0px;
-
-    display: flex;
-    justify-content: space-evenly;
-    
+nav {
+  background-color: rgb(26, 8, 70);
+  padding: 0.2em;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
 
 #container {
   height: fit-content;
+}
+
+/* Mobile Display */
+
+@media only screen and (max-width: 480px) {
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+  nav ul > li {
+    flex: 1 1 200px;
+    font-size: 1.3em;
+  }
+}
+
+/* Window Display*/
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
 }
