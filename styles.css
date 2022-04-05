@@ -11,6 +11,13 @@ body {
 nav {
   background-color: rgb(26, 8, 70);
   padding: 0.2em;
+  position: sticky;
+  top: 0;
+}
+
+footer {
+  background-color: rgb(152, 138, 186);
+  padding: 1em;
 }
 
 a {
@@ -22,21 +29,66 @@ a {
   height: fit-content;
 }
 
+
+#gallery{
+  background-color: rgb(197, 180, 208);
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#carousel{
+  height: 500px;
+  width: 700px;
+  overflow: auto;
+  display: flex;
+  border-radius: 20px;
+
+}
+
+
+
+#carousel img{
+  object-fit: cover;
+}
+
+/* general decorations */
+
+nav li:hover{
+  background-color: rgba(139, 124, 173, 0.577);
+  padding: 0.5em;
+  border-radius: 1em;
+}
+
 /* Mobile Display */
 
 @media only screen and (max-width: 480px) {
+
+  nav{
+    position: static;
+  }
   nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
   }
   nav ul > li {
     flex: 1 1 200px;
     font-size: 1.3em;
   }
+
+  #carousel{
+  height: 300px;
+  width: 300px;
+  overflow: auto;
+  display: flex;
+  border-radius: 20px;
 }
+
+}
+
 
 /* Window Display*/
 
@@ -45,3 +97,4 @@ nav ul {
   display: flex;
   justify-content: space-evenly;
 }
+
