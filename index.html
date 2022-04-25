@@ -6,29 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cooking Mama Kevin</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="carousel.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script src="carousel.js" defer></script>
   </head>
   <body>
     <div id="container">
       <nav>
         <ul>
           <li><a href="/index.html">Home</a></li>
-          <li><a>About Me</a></li>
+          <li><a href="#aboutMe">About Me</a></li>
           <li><a>Menu</a></li>
-          <li><a>Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div id="gallery">
-        <div id="carousel"><img src="/public/waifu1.jpg"/><img src="/public/waifu2.webp"/><img src="/public/waifu3.png"/></div>
+        <div id="carousel">
+          <button id="next" onclick="showImage(1)"></button>
+          <button id="previous" onclick="showImage(-1)"></button>
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <ul>
+            <li class="image fade">
+              <img src="/public/waifu1.jpg" alt="mid waifu" />
+            </li>
+            <li class="image fade">
+              <img src="/public/waifu2.webp" alt="crazy waifu" />
+            </li>
+            <li class="image fade">
+              <img src="/public/waifu3.png" alt="gambling waifu" />
+            </li>
+          </ul>
+        </div>
       </div>
-      <section>About Me</section>
+      <section id="aboutMe">About Me</section>
       <section>Menu</section>
-      <footer></footer>
+      <footer id="contact"></footer>
     </div>
   </body>
 </html>
