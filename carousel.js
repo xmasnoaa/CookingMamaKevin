@@ -32,4 +32,9 @@ function showImage(i) {
   dots[index].className += " active";
 }
 
-
+document.getElementById("next").addEventListener("click", () => {
+  showImage(1);
+});
+document.getElementById("previous").addEventListener("click", () => {
+  showImage(-1);
+});
