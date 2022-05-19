@@ -31,7 +31,7 @@ i#previous{
   top:43%;
   left: 0;
   color: rgba(255, 255, 255, 0.804);
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 i#next{
@@ -39,7 +39,7 @@ i#next{
   top: 43%;
   right: 0;
   color: rgba(255, 255, 255, 0.804);
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 i#previous:hover{
