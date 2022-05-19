@@ -5,13 +5,12 @@
 
 #carousel {
   height: 70%;
-  width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
-  border: black 1px solid;
+  /* border-radius: 20px;
+  border: black 1px solid; */
   position: absolute;
   z-index: 1;
 
@@ -27,11 +26,32 @@
   padding: 0;
 }
 
+i#previous{
+  position: absolute;
+  top:43%;
+  left: 0;
+  color: rgba(255, 255, 255, 0.804);
+  font-size: 2em;
+}
 
+i#next{
+  position: absolute;
+  top: 43%;
+  right: 0;
+  color: rgba(255, 255, 255, 0.804);
+  font-size: 2em;
+}
 
+i#previous:hover{
+  color: rgba(3, 3, 3, 0.804);
+}
+i#next:hover{
+  color: rgba(3, 3, 3, 0.804);
+}
 
-
-
+li img{
+  border-radius: 1em;
+}
 
 
 /*Mobile Display*/
