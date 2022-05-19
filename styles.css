@@ -1,12 +1,9 @@
-
-
-
 html {
   background-color: black;
 }
 
 body {
-  background-color: rgba(226, 244, 255, 1);
+  background-color: rgba(254,250,224, 1);
   min-height: 100vh;
   font-family: "Quicksand", sans-serif;
   margin: 0;
@@ -17,7 +14,7 @@ section {
 }
 
 nav {
-  background-color: rgb(26, 8, 70);
+  background-color: rgb(212,163,115);
   padding: 0.2em;
   position: sticky;
   top: 0;
@@ -25,7 +22,7 @@ nav {
 }
 
 footer {
-  background-color: rgb(152, 138, 186);
+  background-color: rgb(212,163,115);
   padding: 1em;
 }
 
@@ -39,7 +36,7 @@ a {
 }
 
 #gallery {
-  background-color: rgb(197, 180, 208);
+  background-color: rgb(250,237,205);
   height: 600px;
   display: flex;
   justify-content: center;
@@ -56,23 +53,16 @@ nav li:hover {
 
 footer#contact {
   display: flex;
-  flex-flow: column
-
+  flex-flow: column;
 }
 
-ul#socials{
-
-    margin-top: 1em;
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
- 
+ul#socials {
+  margin-top: 1em;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
-
-
-
-
 
 /* Mobile Display */
 
@@ -91,11 +81,10 @@ ul#socials{
     font-size: 1.3em;
   }
 
-  ul#socials li{
-  flex: 1 1 100%;
+  ul#socials li {
+    flex: 1 1 100%;
+  }
 }
-}
-
 
 /* Window Display*/
 
