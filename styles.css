@@ -1,9 +1,15 @@
+@import url("/carousel.css");
+@import url('/variables.css');
+
+
+/* general decorations */
+
 html {
   background-color: black;
 }
 
 body {
-  background-color: rgba(254,250,224, 1);
+  background-color: rgba(254, 250, 224, 1);
   min-height: 100vh;
   font-family: "Quicksand", sans-serif;
   margin: 0;
@@ -14,7 +20,7 @@ section {
 }
 
 nav {
-  background-color: rgb(212,163,115);
+  background-color: var(--nav-foot);
   padding: 0.2em;
   position: sticky;
   top: 0;
@@ -22,7 +28,7 @@ nav {
 }
 
 footer {
-  background-color: rgb(212,163,115);
+  background-color: var(--nav-foot);
   padding: 1em;
 }
 
@@ -36,17 +42,16 @@ a {
 }
 
 #gallery {
-  background-color: rgb(250,237,205);
+  background-color: rgb(250, 237, 205);
   height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* general decorations */
 
 nav li:hover {
-  background-color: rgba(139, 124, 173, 0.577);
+  background-color: rgba(254, 250, 224, 0.577);
   padding: 0.5em;
   border-radius: 1em;
 }
