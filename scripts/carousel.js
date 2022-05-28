@@ -1,4 +1,6 @@
 var index = 0;
+const nextButton = document.getElementById("next");
+const prevButton = document.getElementById("previous");
 
 showImage(index);
 
@@ -32,9 +34,9 @@ function showImage(i) {
   dots[index].className += " active";
 }
 
-document.getElementById("next").addEventListener("click", () => {
+nextButton.addEventListener("click", () => {
   showImage(1);
 });
-document.getElementById("previous").addEventListener("click", () => {
+prevButton.addEventListener("click", () => {
   showImage(-1);
 });
